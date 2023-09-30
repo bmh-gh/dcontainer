@@ -1,0 +1,23 @@
+theme = "nord"
+
+[editor]
+mouse = false
+middle-click-paste = false
+undercurl = true
+
+[editor.statusline]
+center = ["version-control"]
+mode.normal = "normal"
+mode.insert = "insert"
+mode.select = "select"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.file-picker]
+max-depth = 5
+
+[editor.whitespace]
+render = "all"

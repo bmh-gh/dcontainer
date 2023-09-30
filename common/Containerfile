@@ -1,0 +1,11 @@
+FROM archlinux:latest
+
+RUN pacman -Syu --noconfirm && \
+    pacman -S --noconfirm curl git helix tree
+
+WORKDIR /src
+
+COPY ./helix_config.toml /root/.config/helix/config.toml
+# TODO: Automated git credential bindings
+
+CMD ["bash"]

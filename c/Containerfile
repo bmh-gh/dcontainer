@@ -1,0 +1,3 @@
+FROM dev:common
+
+RUN pacman -S --noconfirm base-devel clang

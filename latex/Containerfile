@@ -1,0 +1,6 @@
+FROM dev:common
+
+
+# tectonic: latex compiler
+# texlive: lsp for latex in helix
+RUN pacman -S --noconfirm tectonic texlab
